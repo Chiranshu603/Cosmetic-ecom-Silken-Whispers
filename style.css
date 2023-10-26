@@ -1,0 +1,278 @@
+:root{
+    --bg-color: #EFECE9;
+    --text-color: #050505;
+    --sub-color: #DDD9CE;
+    --nav-color: #AC9CBD;
+    --footer-color: #610C27;
+    --font: 'Merienda', cursive;
+}
+body{
+    background-color:var(--bg-color);
+    font-family: var(--font);
+    margin: 0;
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5% 0 5%;
+    background: var(--nav-color);
+    z-index: 4;
+    flex-wrap: nowrap;
+}
+.logo {
+    font-size: 2rem;
+    color:var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    height: 20px;
+    width: 250px;
+    margin-right: 2 rem;
+    /* padding-top: 5px; */
+    padding-left: 8%;
+    padding-right: 5%;
+}
+ul{
+    padding-left: 2 rem;
+    list-style-type: none;
+    margin-right: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+li{
+    float:left;
+}
+.nav-item {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    /* grid-template-rows: repeat(7,10px); */
+    font-family: var(--font);
+    position: relative;
+    color: black;
+    font-size: 1.50rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 30px 30px 30px 30px;
+    height: 100%;
+}
+.nav-item:hover {
+    color: var(--sub-color);
+}
+.nav-item-button{
+    margin-top: 15px;
+    /* padding: 10px 10px 10px 10px; */
+    font-size: 1.50rem;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--sub-color);
+}
+.navbar {
+    position: flex;
+    top: 100%;
+    width: 100%;
+    height: 2 rem;
+    background: var(--nav-color);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.navbar button:hover{
+    color: var(--sub-color);
+}
+#active{
+    background-color: var(--sub-color);
+}
+#active:hover{
+    color: var(--footer-color);
+}
+/*
+.dropdown{
+position:relative;
+display: inline-block;
+}
+.dropdown-content {
+    display: none;
+     position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+  
+
+.dropdown-content a {
+color: black;
+text-decoration: none;
+padding:12px 16px;
+border:2px solid red;
+display: block;
+
+}
+
+/* Change color of dropdown links on hover 
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover 
+.dropdown:hover .dropdown-content {display: block; border:2px solid black;
+    position:inherit;
+}
+*/
+#btnlogin{
+    font-size: 60px;
+    padding: 20px 10px 10px 20px;
+    color: var(--text-color);
+}
+#btnlogin:hover{
+    color: var(--sub-color);
+}
+#cart{
+    font-size: 60px;
+    padding: 20px 10px 10px 20px;
+    color: var(--text-color);
+}
+#cart:hover{
+    color: var(--sub-color);
+}
+
+.footer{
+    background-color: var(--nav-color);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.fo-grid-container{
+    display: grid ;
+    grid-template-columns: 0.75fr 0.50fr 1.35fr 0.25fr 0.85fr;
+    margin: 0;
+}
+.fo-intro{
+    text-align: left;
+    padding: 5px 0px 5px 10px;
+}
+.footer-nav{
+    text-align: left;
+    padding: 50px 10px 0 40px;
+}
+.footer-nav ul{
+    border-left: 2px solid black;
+    padding-left: 10px;
+    display: grid;
+}
+
+.item{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 25px;
+}
+.item:hover{
+    color: var(--sub-color);
+}
+.footer-image1{
+    float: left;
+    display: inline;
+    padding: 10px 0px 10px 10px;
+}
+.fo-logo{
+    display: inline-block;
+    place-items: center;
+    padding: 100px 0px 10px 50px;
+}
+.footer-image2{
+    float: right;
+    display: inline;
+    padding: 30px 40px 10px 0px;
+}
+.footer-social{
+    margin-top: 20px;
+    padding-top: 5px;
+    border-right: 2px solid black;
+}
+.icons{
+    place-items: center;
+    margin-top: 20px;
+    padding: 0px 10px 0px 50px;
+}
+.icons:hover{
+    color: var(--sub-color);
+}
+.footer-company-name b{
+    font-size: 30px;
+}
+.footer-contact{
+    text-align: left;
+    font-size: 20px;
+    padding: 0px 10px 10px 10px;
+}
+.footer-contact p{
+    display: inline-block;
+}
+#btncontact{
+    font-size: 30px;
+    padding: 20px 10px 0px 20px;
+    color: var(--text-color);
+}
+#btncontact:hover{
+    color: var(--sub-color);
+}
+.fo-last {
+    /*display: flex;
+    flex-wrap: nowrap;*/
+    background-color: var(--sub-color);
+    width: 100%;
+    height: 20px;
+}
+.fo-last-img{
+    /* display: inline-flex; */
+    display: inline;
+    font-size: 20px;
+    background-color: var(--sub-color);
+    margin-bottom: 0%;
+}
+#left{
+    padding-left: 30.15%;
+}
+#right{
+    padding-right: 32.58%;
+}
+.fo-last-text{
+    display: inline;
+    background-color: var(--sub-color);
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 0 2% 0 2%;
+    }
+
+    .logo {
+        width: auto;
+        margin-right: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .nav-item-button {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    
+    /* Adjust other styles for smaller screens as needed */
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silken Whispers</title>
+    <link rel="icon" type="image/x-icon" href="logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --bg-color: #EFECE9;
+            --text-color: #050505;
+            --sub1-color: #DDD9CE;
+            --nav-color: #AC9CBD;
+            --sub2-color: #610C27;
+            --font: 'Merienda', cursive;
+        }
+        content{
+            padding-top: 9%;
+        }
+        .sub_heading{
+            background-color: var(--sub1-color);
+            height: 80px;
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            width: 100%;
+            position: fixed;
+        }
+        .sub_heading p{
+            font-size: 40px;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 1rem 2rem 1rem 2rem;
+            height: 100%;
+        }
+        .grid-item1{
+            padding: 0 2rem 0 2rem;
+            border-radius: 2rem;
+            box-sizing: border-box;
+            height: 20rem;
+
+        }
+        .grid-item2{
+            border: 2px solid black;
+            border-radius: 2rem;
+            box-sizing: border-box;
+            height: 20rem;
+        }
+        .about{
+            padding-top: 10%;
+        }
+        .heading h2{
+            font-size: 40px;
+        }
+        .content p{
+            font-size: 20px;
+        }
+        .story .inclusive .container{
+            background-color: var(--sub2-color);
+        }
+        .about .grid-item2{
+            background-image: url('about.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .story .grid-item2{
+            background-image: url('https://d38w6rqj4j3roy.cloudfront.net/wp-content/uploads/2021/05/Laka-south-korean-gender-neutral-beauty-brand.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .mission .grid-item2{
+            background-image: url('https://img.freepik.com/premium-photo/beauty-skincare-face-different-women-group-together-diversity-cosmetics-dermatology-with-glow-shine-skin-female-friends-studio-inclusion-makeup-self-love-portrait_590464-119786.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .inclusive .grid-item2{
+            background-image: url('https://www.lek.com/sites/default/files/hero-images/insights/2348-Mens-BPC-hero.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo2.png" alt="Silken Whispers" >
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Homepage.html" class="nav-item">Home</a></li>
+                <li><a href="category.html" class="nav-item" >Category</a></li>
+                <li><a href="aboutus.html" class="nav-item" id="active">About Us</a></li>
+                <li><a href="brands.html" class="nav-item" >Brands</a></li>
+                <li><a href="beautyadvice.html" class="nav-item" >Beauty Advice</a></li>
+                <li><a href="" class="nav-item" >Contact Us</a></li>
+                <li><a href="LogIn.html"><i class="material-icons" id="btnlogin">account_circle</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <content>
+        <div class="sub_heading">
+            <p>About Us</p>
+        </div>
+    </content>
+    <section class="about">
+        <div class="container">
+            <div class="grid-item1">
+                <div class="heading">
+                    <h2>About Us</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        Welcome to Silken Whispers Unisex Cosmetic and Skincare, your ultimate destination for luxurious, effective, and inclusive beauty products. We are more than just a skincare and cosmetic brand – we are a celebration of individuality, self-care, and confidence.
+                        <!-- Discover Silken Whispers, where beauty knows no boundaries. We're a trailblazing brand, uniting luxury with inclusivity. Our mission is to empower individuals with diverse, high-quality products that celebrate authenticity. Cruelty-free, sustainable, and innovative, we're a community that embraces self-expression and self-care. Join us in redefining beauty, one whisper at a time. -->
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item2">
+
+            </div>
+        </div>
+    </section>
+    <section class="story">
+        <div class="container">
+            <div class="grid-item2">
+
+            </div>
+            <div class="grid-item1">
+                <div class="heading">
+                    <h2>Our Story</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        Silken Whispers was born out of a shared vision to create a brand that breaks down traditional beauty norms and embraces the diverse beauty that exists in every individual. Founded by a team of passionate beauty enthusiasts, Silken Whispers is built on the belief that beauty knows no boundaries – it's for everyone.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mission">
+        <div class="container">
+            <div class="grid-item1">
+                <div class="heading">
+                    <h2>Our Mission</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        At Silken Whispers, we're on a mission to empower individuals to express themselves authentically through cosmetics and skincare. We aim to provide a curated collection of high-quality products that cater to all genders, skin types, and tones, so everyone can embark on their unique beauty journey with confidence.
+
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item2">
+
+            </div>
+        </div>
+    </section>
+    <section class="inclusive">
+        <div class="container">
+            <div class="grid-item2">
+
+            </div>
+            <div class="grid-item1">
+                <div class="heading">
+                    <h2>Inclusive Beauty</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        We celebrate diversity and inclusivity in all aspects of our brand. Our product range is meticulously formulated to address a wide array of skin concerns, tones, and textures. We believe that everyone deserves access to products that enhance their natural beauty, and we take pride in offering a range that is as diverse as our clientele.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="fo-grid-container">
+            <div class="fo-grid-items">
+                <div class="fo-intro">
+                    <h1>SILKERS</h1>
+                    At Silken Whispers, we believe in the power of understated beauty. Our carefully crafted cosmetics embody a fusion of aesthetics and sensuality, inviting you to embrace your unique grace with each stroke
+                    <div>
+                        <p class="footer-company-name">Company Name <b>&copy</b> 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-nav">
+                <ul>
+                    <li><a href="" class="item" >Home</a></li><br>
+                    <li><a href="category.html" class="item" >Category</a></li><br>
+                    <li><a href="aboutus.html" class="item" >About Us</a></li><br>
+                    <li><a href="" class="item" >Brands</a></li><br>
+                    <li><a href="" class="item" >Beauty Advice</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-image1">
+                    <img src="fo__1_-removebg-preview-removebg-preview.png">
+                </div>
+                <div class="fo-logo">
+                    <img src="fo-logo.png" alt="Silken Whispers" >
+                </div>
+                <div class="footer-image2">
+                    <img src="foimg-transformed-removebg-preview (3) (1).png">
+                </div>
+            </div>
+
+            <div class="fo-grid-items">
+                <div class="footer-social">
+                    <a href="#" ><img src="icons8-facebook-50.png" alt="Facebook" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-twitter-50.png" alt="Twitter" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-instagram-50.png" alt="Instagram" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-linkedin-50.png" alt="LinkedIn" class="icons"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-contact">
+                    <p>Contact Us:</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">email</i></a>
+                    <p>contact@example.com</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">call</i></a>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="fo-last">
+            <div class="fo-last-img" id="left">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+            <div class="fo-last-text">
+                SILKEN WHISPERS CHIRANSHU 2110992197
+            </div>
+            <div class="fo-last-img" id="right">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

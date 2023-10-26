@@ -30,4 +30,5 @@ Thank you for choosing to be a part of the Silken Whispers project. I'm excited 
 
 Sincerely,
 Chiranshu
+
 ![image](https://github.com/Chiranshu603/Cosmetic-ecom-Silken-Whispers/assets/95736813/f3306c6a-db12-4dad-ac9b-6368b7490e15)

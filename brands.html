@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silken Whispers</title>
+    <link rel="icon" type="image/x-icon" href="logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --bg-color: #EFECE9;
+            --text-color: #050505;
+            --sub1-color: #DDD9CE;
+            --nav-color: #AC9CBD;
+            --sub2-color: #610C27;
+            --font: 'Merienda', cursive;
+        }
+        body{
+            overflow: hidden;
+        }
+        content{
+            padding-top: 9%;
+        }
+        .sub_heading{
+            /* display: flex; */
+            width: 100%;
+            background-color: var(--sub1-color);
+            height: 80px;
+            text-align: center;
+            padding-top: 4%;
+            padding-bottom: 30px;
+            position: fixed; 
+        }
+        .sub_heading p{
+            font-size: 40px;
+            text-align: center;
+        }
+        .brand-grid{
+            padding-top: 10%;
+        }
+        .grid-wrapper{
+			--auto-grid-min-size: 16rem;
+            padding-left: 1%;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+			margin: 0;
+            padding: 0;
+			box-sizing: border-box;
+            background-color: var(--bg-color);
+		}
+		.grid-wrapper li{
+			background-color: var(--sub2-color);
+			color: #ffffff;
+            height: 20%;
+			list-style-type: none;
+			padding: 5rem 1rem;
+			text-align: center;
+			text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            cursor: pointer; /* Add cursor pointer for clickable effect */
+        }
+        .grid-wrapper li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        #a{
+            background-image: url('https://i.pinimg.com/564x/26/e8/b8/26e8b84538a5823d878d8dfc49e4cb54.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #b{
+            background-image: url('https://i.pinimg.com/236x/1f/43/fc/1f43fc331292b862b0134c2c571ac30e.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #i{
+            background-image: url('https://i.pinimg.com/236x/8b/40/fc/8b40fc7a6847a6d04d5f37623a666fb7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #d{
+            background-image: url('https://i.pinimg.com/564x/d0/9d/41/d09d410b92a1d6dcd182edc68b4af826.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #e{
+            background-image: url('https://i.pinimg.com/236x/5c/ea/ed/5ceaed9037d6f8cc63f713f1ab9a1cff.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #k{
+            background-image: url('https://i.pinimg.com/564x/9b/30/b7/9b30b7f3ead3f83b3cf134314ecea7ce.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #f{
+            background-image: url('https://i.pinimg.com/236x/91/53/f7/9153f7fdcf0d26f60425f16604e2c89b.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #h{
+            background-image: url('https://i.pinimg.com/236x/97/ca/d6/97cad6b2349154feb227dbf3940621fe.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #c{
+            background-image: url('https://i.pinimg.com/564x/07/1a/f9/071af900bcc75b8e09f606bd2b5ec67c.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #j{
+            background-image: url('https://i.pinimg.com/236x/b2/3d/f4/b23df4197d923fbbba9ed78209341b0d.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #g{
+            background-image: url('https://i.pinimg.com/236x/00/ba/fb/00bafb47722bad8cbda6b397e2ed1668.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #l{
+            background-image: url('https://i.pinimg.com/564x/58/f1/81/58f1814ba692a91d71eca91a2dc35423.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #m{
+            background-image: url('https://i.pinimg.com/236x/0d/e0/61/0de061f96dcaf734caafd37e0a286a62.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #n{
+            background-image: url('https://i.pinimg.com/564x/66/3c/ed/663ced021f538d98c0fa9cb0e2cb24a1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #o{
+            background-image: url('https://i.pinimg.com/564x/3b/06/5c/3b065ca3fb0dbfd6986015fbecf228ba.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #p{
+            background-image: url('https://i.pinimg.com/236x/58/ae/26/58ae264032f15f1f419a77d779766766.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #q{
+            background-image: url('https://i.pinimg.com/564x/4d/7e/f2/4d7ef2c657ef96fd4056545df856fc70.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #r{
+            background-image: url('https://i.pinimg.com/564x/74/3a/90/743a90ba3f328007d16d2d98c6f5a293.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+		.main-container{
+			margin: 0 auto;
+			max-width: 100%;
+			padding:2rem 2rem;
+		}
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo2.png" alt="Silken Whispers">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Homepage.html" class="nav-item" >Home</a></li>
+                <li><a href="category.html" class="nav-item" >Category</a></li>
+                <li><a href="aboutus.html" class="nav-item" >About Us</a></li>
+                <li><a href="brands.html" class="nav-item" id="active">Brands</a></li>
+                <li><a href="beautyadvice.html" class="nav-item" >Beauty Advice</a></li>
+                <li><a href="contactus.html" class="nav-item">Contact Us</a></li>
+                <li><a href="LogIn.html"><i class="material-icons" id="btnlogin">account_circle</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <content>
+        <div class="sub_heading">
+            <p>Brands</p>
+        </div>
+    </content>
+    <section class="brand-grid">
+		<div class="main-container">
+			<ul class="grid-wrapper">
+				<li id="a"><a href="https://www.loreal.com/en/"></a></li>
+				<li id="b"><a href="https://www.chanel.com/in/"></a></li>
+				<li id="c"><a href="https://www.beautybay.com/"></a></li>
+				<li id="d"><a href="https://www.victoriassecret.com/in/"></a></li>
+				<li id="e"><a href="https://www.rarebeauty.com/"></a></li>
+				<li id="f"><a href="https://www.mioskincare.com/"></a></li>
+				<li id="g"><a href="https://fentybeauty.com/"></a></li>
+				<li id="h"><a href="https://www.maccosmetics.in/"></a></li>
+				<li id="i"><a href="https://www.bobbibrown.in/"></a></li>
+				<li id="j"><a href="https://www.sephora.com/"></a></li>	
+				<li id="k"><a href="https://www.dior.com/en_int"></a></li>	
+				<li id="l"><a href="https://en.caudalie.com/"></a></li>
+                <li id="m"><a href="https://musebeauty.pro/"></a></li>
+				<li id="n"><a href="https://www.toofaced.com/"></a></li>
+				<li id="o"><a href="https://www.maybelline.com/"></a></li>	
+				<li id="p"><a href="https://us.innisfree.com/"></a></li>	
+				<li id="q"><a href="https://www.narscosmetics.com/"></a></li>
+                <li id="r"><a href="https://hudabeauty.com/us/en_US/home"></a></li>		
+			</ul>
+		</div>
+	</section>
+    <footer class="footer">
+        <div class="fo-grid-container">
+            <div class="fo-grid-items">
+                <div class="fo-intro">
+                    <h1>SILKERS</h1>
+                    At Silken Whispers, we believe in the power of understated beauty. Our carefully crafted cosmetics embody a fusion of aesthetics and sensuality, inviting you to embrace your unique grace with each stroke
+                    <div>
+                        <p class="footer-company-name">Company Name <b>&copy</b> 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-nav">
+                <ul>
+                    <li><a href="" class="item" >Home</a></li><br>
+                    <li><a href="category.html" class="item" >Category</a></li><br>
+                    <li><a href="aboutus.html" class="item" >About Us</a></li><br>
+                    <li><a href="" class="item" >Brands</a></li><br>
+                    <li><a href="" class="item" >Beauty Advice</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-image1">
+                    <img src="fo__1_-removebg-preview-removebg-preview.png">
+                </div>
+                <div class="fo-logo">
+                    <img src="fo-logo.png" alt="Silken Whispers" >
+                </div>
+                <div class="footer-image2">
+                    <img src="foimg-transformed-removebg-preview (3) (1).png">
+                </div>
+            </div>
+
+            <div class="fo-grid-items">
+                <div class="footer-social">
+                    <a href="#" ><img src="icons8-facebook-50.png" alt="Facebook" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-twitter-50.png" alt="Twitter" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-instagram-50.png" alt="Instagram" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-linkedin-50.png" alt="LinkedIn" class="icons"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-contact">
+                    <p>Contact Us:</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">email</i></a>
+                    <p>contact@example.com</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">call</i></a>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="fo-last">
+            <div class="fo-last-img" id="left">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+            <div class="fo-last-text">
+                SILKEN WHISPERS CHIRANSHU 2110992197
+            </div>
+            <div class="fo-last-img" id="right">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

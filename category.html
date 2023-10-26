@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silken Whispers</title>
+    <link rel="icon" type="image/x-icon" href="logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --bg-color: #EFECE9;
+            --text-color: #050505;
+            --sub1-color: #DDD9CE;
+            --nav-color: #AC9CBD;
+            --sub2-color: #610C27;
+            --font: 'Merienda', cursive;
+        }
+        content{
+            padding-top: 9%;
+        }
+        .sub_heading{
+            background-color: var(--sub1-color);
+            height: 80px;
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            width: 100%;
+            position: fixed;
+        }
+        .sub_heading p{
+            font-size: 40px;
+            text-align: center;
+        }
+        .category{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            background-image: url("catbackhome.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin-bottom: 0;
+        }
+        .catwoman{
+            display: grid;
+            grid-template-columns: 1.50fr 1fr;
+            margin: 5rem 0rem 0rem 9rem;
+            width: 80%;
+        }
+        .category1{
+            background-image: url("catbackhome.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-top: 130px;
+            width: 50%;
+            margin-right: 5rem;
+            text-align: left;
+            float: left;
+            /* display: inline-block; */
+        }
+        .product1{
+            background-image: url('https://i.pinimg.com/564x/2b/71/19/2b711924e3b55d90221c291d0b0a1ac0.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: var(--bg-color);
+            height: 70%;
+            width: 95%;
+            border: 2px solid black;
+            margin: 15rem 0rem 5rem 8rem;
+            /* padding-top: 10rem; */
+        }
+        /* .product1{
+            width: 50%;
+            background-color: #3498db;
+            padding: 20px;
+            color: white;
+        }
+        .product2{
+            width: 50%;
+            background-color: #3498db;
+            color: white;
+        } */
+        .catman{
+            display: grid;
+            grid-template-columns: 1fr 1.50fr;
+            margin: 0rem 0rem 0rem 9rem;
+            width: 80%;
+        }
+        .product2{
+            background-image: url('https://i.pinimg.com/564x/6b/27/d5/6b27d5b8dd1c26699bacb9df4618ab91.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-color: var(--bg-color);
+            height: 65%;
+            width: 95%;
+            border: 2px solid black;
+            margin: 13rem 0rem 5rem 0rem;
+            /* padding-top: 10rem; */
+        }
+        h2{
+            font-size: 50px;
+            text-align: center;
+            padding-top: 0;
+            margin-top: 0;
+            color: var(--bg-color);
+            /* padding-bottom: 12%; */
+        }
+        .category2{
+            background-image: url("catbackhome.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-top: 130px;
+            padding-left: 30%; 
+            margin-bottom: 0;
+            padding-bottom: 0;
+            width: 50%;
+            float: right;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo2.png" alt="CosmicCuties" >
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Homepage.html" class="nav-item" >Home</a></li>
+                <li><a href="" class="nav-item" id="active" >Category</a></li>
+                <li><a href="aboutus.html" class="nav-item" >About Us</a></li>
+                <li><a href="brands.html" class="nav-item" >Brands</a></li>
+                <li><a href="beautyadvice.html" class="nav-item" >Beauty Advice</a></li>
+                <li><a href="contactus.html" class="nav-item" >Contact Us</a></li>
+                <li><a href="LogIn.html"><i class="material-icons" id="btnlogin">account_circle</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <content>
+        <div id="categories">
+            <div class="sub_heading">
+                <p>Categories</p>
+            </div>
+            <div class="category">
+                <div class="catwoman">
+                    <div class="category1">
+                        <img src="face_preview_rev_1 (1).png" usemap="#image-map1">
+                        <map name="image-map1">
+                            <area target="_blank" alt="eyes" title="eyes" href="eyes.html" coords="327,430,69" shape="circle">
+                            <area target="_blank" alt="eyes" title="eyes" href="eyes.html" coords="188,463,55" shape="circle">
+                            <area target="_blank" alt="lips" title="lips" href="lips.html" coords="227,566,327,588,319,642,264,630,223,589" shape="poly">
+                            <area target="_blank" alt="nails" title="nails" href="hands.html" coords="191,570,212,602" shape="rect">
+                            <area target="_blank" alt="nails" title="nails" href="hands.html" coords="228,604,256,629" shape="rect">
+                            <area target="_blank" alt="hands" title="hands" href="hands.html" coords="206,615,293,863,373,872,264,633,262,638" shape="poly">
+                            <area target="_blank" alt="face" title="face" href="face.html" coords="456,441,411,417,289,506,287,661,353,697,482,564" shape="poly">
+                            <area target="_blank" alt="face" title="face" href="face.html" coords="222,546,59" shape="circle">
+                            <area target="_blank" alt="hair" title="hair" href="hair.html" coords="251,290,67" shape="circle">
+                        </map>
+                    </div>
+                    <div class="product1">
+                        <h2 style="color: #050505;">PRODUCT OF THE DAY</h2>
+    
+                    </div>
+                </div>
+
+                <div class="catman">
+                    <div class="product2">
+                        <div class="heading"><h2>PRODUCT OF THE DAY</h2></div>
+                    </div>
+                    <div class="category2">
+                        <img src="boy__1_-removebg-preview (1).png" usemap="#image-map2">
+                        <map name="image-map2">
+                            <area target="_blank" alt="face" title="face" href="hface.html" coords="440,235,130" shape="circle">
+                            <area target="_blank" alt="hair" title="hair" href="hhair.html" coords="298,337,204,224,297,30,366,101" shape="poly">
+                            <area target="_blank" alt="hair" title="hair" href="hhair.html" coords="300,36,521,0,632,89,669,238,576,263,552,142,373,107,321,55" shape="poly">
+                            <area target="_blank" alt="hair" title="hair" href="hhair.html" coords="574,264,664,238,563,392,497,356" shape="poly">
+                        </map>
+                    </div>
+                </div>
+        </div>
+    </content>
+    <footer class="footer">
+        <div class="fo-grid-container">
+            <div class="fo-grid-items">
+                <div class="fo-intro">
+                    <h1>SILKERS</h1>
+                    At Silken Whispers, we believe in the power of understated beauty. Our carefully crafted cosmetics embody a fusion of aesthetics and sensuality, inviting you to embrace your unique grace with each stroke
+                    <div>
+                        <p class="footer-company-name">Company Name <b>&copy</b> 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-nav">
+                <ul>
+                    <li><a href="" class="item" >Home</a></li><br>
+                    <li><a href="category.html" class="item" >Category</a></li><br>
+                    <li><a href="aboutus.html" class="item" >About Us</a></li><br>
+                    <li><a href="" class="item" >Brands</a></li><br>
+                    <li><a href="" class="item" >Beauty Advice</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-image1">
+                    <img src="fo__1_-removebg-preview-removebg-preview.png">
+                </div>
+                <div class="fo-logo">
+                    <img src="fo-logo.png" alt="CosmicCuties" >
+                </div>
+                <div class="footer-image2">
+                    <img src="foimg-transformed-removebg-preview (3) (1).png">
+                </div>
+            </div>
+
+            <div class="fo-grid-items">
+                <div class="footer-social">
+                    <a href="#" ><img src="icons8-facebook-50.png" alt="Facebook" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-twitter-50.png" alt="Twitter" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-instagram-50.png" alt="Instagram" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-linkedin-50.png" alt="LinkedIn" class="icons"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-contact">
+                    <p>Contact Us:</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">email</i></a>
+                    <p>contact@example.com</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">call</i></a>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="fo-last">
+            <div class="fo-last-img" id="left">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+            <div class="fo-last-text">
+                SILKEN WHISPERS CHIRANSHU 2110992197
+            </div>
+            <div class="fo-last-img" id="right">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

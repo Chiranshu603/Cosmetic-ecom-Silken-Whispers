@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silken Whispers</title>
+    <link rel="icon" type="image/x-icon" href="logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --bg-color: #EFECE9;
+            --text-color: #050505;
+            --sub-color: #DDD9CE;
+            --nav-color: #AC9CBD;
+            --footer-color: #610C27;
+            --font: 'Merienda', cursive;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .cookies-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+        }
+        .home{
+            position: relative;
+            font-family: var(--font);
+            padding-top: 4.5%;
+            min-height: 85vh;
+            display: flex;
+            /* background: var(--footer-color); */
+            font-weight: 400;
+            background-image: url("https://i.pinimg.com/564x/e9/c0/e4/e9c0e413eb3b356e12b115faee3c00df.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /* .intro{
+            background-color: var(--bg-color);
+            background-image: url("https://i.pinimg.com/564x/e9/c0/e4/e9c0e413eb3b356e12b115faee3c00df.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-left: 70px;
+            padding-top: 20px;
+            padding-right: -50px;
+            margin-right: -20%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            
+            #cc{
+                font-size: 40px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .description {
+                font-size: 18px;
+                margin-bottom: 10px;
+                line-height: 1.6;
+            }
+            .cta {
+                font-size: 20px;
+                font-weight: bold;
+                color: #554994;
+            }
+        }
+        .container {
+            float: right;
+            padding-left: 18%;
+            margin-left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 750px;
+            gap: 10px;
+            text-align: center;
+
+            > div {
+                flex: 0 0 120px;
+                border-radius: 0.5rem;
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+                box-shadow: 1px 5px 15px #1e0e3e;
+                position: relative;
+                overflow: hidden;
+
+                &:nth-of-type(1) {
+                background: url("https://i.pinimg.com/564x/10/e8/ec/10e8ecf0208907224850cb3a1a3f4017.jpg")
+                    no-repeat 50% / cover;
+                }
+                &:nth-of-type(2) {
+                background: url("https://i.pinimg.com/564x/04/d8/f3/04d8f35aa0ebeb11d351e57689e40266.jpg")
+                    no-repeat 50% / cover;
+                }
+                &:nth-of-type(3) {
+                background: url("https://i.pinimg.com/564x/18/94/61/189461396a0b44709f34ede4dfa82d65.jpg")
+                    no-repeat 50% / cover;
+                }
+                &:nth-of-type(4) {
+                background: url("https://i.pinimg.com/564x/1e/4e/92/1e4e92787e4c6e65879563cd4fdb925b.jpg")
+                    no-repeat 50% / cover;
+                }
+                &:nth-of-type(5) {
+                background: url("https://i.pinimg.com/564x/2c/81/72/2c81722b929b305489639890a00cacba.jpg")
+                    no-repeat 50% / cover;
+                }
+                &:nth-of-type(6) {
+                background: url("https://i.pinimg.com/564x/85/a0/5d/85a05d0e1693623c8faadcfd1169a858.jpg")
+                    no-repeat 50% / cover;
+                }
+
+                .content {
+                    font-size: 1.5rem;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    opacity: 0;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: flex-end;
+                    background: rgb(2, 2, 46);
+                    background: linear-gradient(
+                        0deg,
+                        rgba(2, 2, 46, 0.6755077030812324) 0%,
+                        rgba(255, 255, 255, 0) 100%
+                        );
+                    transform: translatey(100%);
+                    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+                    visibility: hidden;
+
+                    span {
+                        /* display: block; 
+                        font-size: 1.0rem;
+                        padding-top: 0;
+                    }
+                }
+
+                &:hover {
+                flex: 0 0 400px;
+                box-shadow: 1px 3px 15px var(--footer-color);
+                transform: translatey(-30px);
+                }
+
+                &:hover .content {
+                opacity: 1;
+                transform: translatey(0%);
+                visibility: visible;
+                }
+            }
+        } */
+        .gallery {
+            padding: 0rem;
+            display: grid;
+            grid-template-columns: repeat(5, 80vw);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0rem;
+            grid-row-gap: 1rem;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            /* overflow: auto; */
+            height: 90vh;
+            scroll-snap-type: both mandatory;
+            scroll-padding: 1rem;
+        }
+        /* Width 273
+        Height 235 */
+
+        .active {
+            scroll-snap-type: unset;
+        }
+
+        li {
+            scroll-snap-align: left;
+            display: inline-block;
+            border-radius: 3px;
+            font-size: 0;
+        }
+        li img {
+            max-width: 100%; /* Scale the image to fit the list item width */
+            max-height: 100%; /* Scale the image to fit the list item height */
+            display: block; /* Remove any spacing below inline elements */
+        }
+        .sub_heading{
+            background-color: var(--sub-color);
+            height: 80px;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 30px;
+            position: inherit;
+            z-index: 800;
+        }
+        .sub_heading p{
+            font-size: 40px;
+            text-align: center;
+        }
+        .image-grid div {
+            width: 24.75%;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .image-grid {
+            /* width: 100%; */
+            grid-gap: 0.25rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 3px 7px 3px;
+        }
+
+        .image01 { background-image: url('https://i.pinimg.com/236x/a0/19/58/a0195843b862a85ed95e8ee22389c8dc.jpg'); }
+        .image02 { background-image: url('https://i.pinimg.com/236x/a6/9c/c9/a69cc9f2111f79d3bdce49e35217620c.jpg'); }
+        .image03 { background-image: url('https://i.pinimg.com/236x/7d/cc/99/7dcc998f16e2ee44adf8ab6e4e9fc526.jpg'); }
+        .image04 { background-image: url('https://i.pinimg.com/564x/72/d3/98/72d398827b9e40ada5d394ea5995be03.jpg'); }
+        .image05 { background-image: url('https://i.pinimg.com/236x/67/b3/56/67b356b7b56cb0c4d7de3a9b5f6943b0.jpg'); }
+        .image06 { background-image: url('https://i.pinimg.com/564x/e8/d2/03/e8d203ff1ebcc6c73f8151600e64dc3b.jpg'); }
+        .image07 { background-image: url('https://i.pinimg.com/564x/0b/23/ed/0b23ed91742a74b714c9f6e054e58d93.jpg'); }
+        .image08 { background-image: url('https://i.pinimg.com/564x/78/9d/47/789d47314165d9b7e4080c4cd425bfb8.jpg'); }
+        .image09 { background-image: url('https://i.pinimg.com/564x/a0/6a/d5/a06ad562b52f8c4d0240456eab19ce4e.jpg'); }
+        .image10 { background-image: url('https://i.pinimg.com/564x/6a/c4/10/6ac4108116222c6596c6a3fcc9a87f20.jpg'); }
+        .image11 { background-image: url('https://i.pinimg.com/564x/85/7e/2c/857e2cb1d80cc59b31f183cecdca5027.jpg'); }
+        .image12 { background-image: url('https://i.pinimg.com/564x/95/34/0b/95340bcbe2527f175f171c4f91c43893.jpg'); }
+        .image13 { background-image: url('https://i.pinimg.com/564x/1f/4c/fb/1f4cfbbc3b6ed658ff00956502263876.jpg'); }
+        .image14 { background-image: url('https://i.pinimg.com/564x/da/fc/5d/dafc5d8ab05533a81b1cee933f6f7462.jpg'); }
+        .image15 { background-image: url('https://i.pinimg.com/564x/75/f7/c6/75f7c68f4c68c2eb0d6e13da38d03bfd.jpg'); }
+        .image16 { background-image: url('https://i.pinimg.com/564x/07/f7/ac/07f7ac53ecea851bc5f55bbb1dab8c3e.jpg');}
+
+        @media screen and (max-width: 400px) {
+            .image-grid {
+                flex-direction: column;
+                flex-wrap: no-wrap;
+            }
+            .image-grid div { width: 100%; }
+        }
+        .grid-container{
+            padding: 10px 10px 10px 10px;
+            display: grid ;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .grid-item{
+            text-align: center;
+            padding: 10px 30px 30px 30px;
+            margin: 0 10px 0 10px;
+            border: 1px solid black;
+        }
+        .customer img{
+            height: 50%;
+            width: 50%;
+            clip-path: circle(50.0% at 50% 50%);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo2.png" alt="CosmicCuties" >
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="" class="nav-item" id="active" >Home</a></li>
+                <li><a href="category.html" class="nav-item" >Category</a></li>
+                <li><a href="aboutus.html" class="nav-item" >About Us</a></li>
+                <li><a href="brands.html" class="nav-item" >Brands</a></li>
+                <li><a href="beautyadvice.html" class="nav-item" >Beauty Advice</a></li>
+                <li><a href="contactus.html" class="nav-item" >Contact Us</a></li>
+                <li><a href="LogIn.html"><i class="material-icons" id="btnlogin">account_circle</i></a></li>
+                <li><a href="cart.html"><i class="material-symbols-rounded" id="cart">shopping_cart</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="overlay" class="overlay"></div>
+    <div id="cookies-popup" class="cookies-popup">
+        <p>We use cookies to enhance your experience on our website. By continuing to use this site, you agree to our use of cookies. <a href="privacy-policy.html">Learn more</a></p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+    <home class="home">
+        <ul class="gallery">
+            <li style="background-size: cover;"><img src="img1 (4).jpg" alt=""></li>
+            <li style="background: #f7ede2;"><img src="img8 (4).jpg" alt=""></li>
+            <li style="background: #f5cac3;"><img src="img3.jpg" alt=""></li></li>
+            <li style="background: #84a59d;"><img src="img4.jpg" alt=""></li></li>
+            <li style="background: #f28482;"><img src="img5.jpg" alt=""></li></li>
+        </ul>
+        <!-- <div class="intro">
+            <div id="cc">
+                <i>Welcome to Cosmic Cuties – Where Beauty Meets the Universe!</i><br>
+            </div>
+            <div class="description">
+                Step into a world where beauty knows no bounds and the cosmos inspire our creations.
+                At Cosmic Cuties, we believe that every individual possesses a unique cosmic essence
+                that deserves to shine. Our brand is more than just a beauty website; it's a 
+                celestial journey, a fusion of outer space and inner radiance.<br>
+                Our products are designed to bring out your inner 
+                glow and help you radiate confidence. Whether you're a makeup maven or a skincare 
+                aficionado, our range caters to your cosmic beauty needs.<br>
+                Indulge in products that are not only visually captivating but also meticulously formulated to enhance your 
+                natural allure. Each item is a testament to the seamless harmony between science 
+                and art – just like the cosmos itself. <br>
+                Join us in celebrating the magnificence of the universe and 
+                the brilliance within you. We're delighted to have you embark on this cosmic 
+                beauty adventure with us.
+                <div class="cta">
+                    Get ready to elevate your beauty routine to astronomical heights – welcome to 
+                Cosmic Cuties!
+                </div>
+            </div>
+          </div>
+        <div class="container">
+            <div>
+              <div class="content">
+                <h2>RadianceBlend</h2>
+                <span>Unveil Your Perfect Glow!</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Palette Perfection</h2>
+                <span>Paint Your Beauty Canvas</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Sculpt, Blend, Glam</h2>
+                <span>Elevate Your Makeup Game</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Hydration Elixir</h2>
+                <span> Love Your Skin from Within</span>
+              </div>
+            </div>
+            <div>
+                <div class="content">
+                  <h2>Less is More</h2>
+                  <span>Sheer Delights for Effortless Glam</span>
+                </div>
+              </div>
+              <div>
+                <div class="content">
+                  <h2>Confidence in Every Drop</h2>
+                  <span>Find Your Foundation Story</span>
+                </div>
+              </div>
+              
+          </div> -->
+          
+    </home>
+
+    <content>
+        <section>
+            <div class="sub_heading">
+                <p>Featured Products</p>
+            </div>
+            <div class="image-grid">
+                <div class="image01"></div>
+                <div class="image02"></div>
+                <div class="image03"></div>
+                <div class="image04"></div>
+                <div class="image05"></div>
+                <div class="image06"></div>
+                <div class="image07"></div>
+                <div class="image08"></div>
+                <div class="image09"></div>
+                <div class="image10"></div>
+                <div class="image11"></div>
+                <div class="image12"></div>
+                <div class="image13"></div>
+                <div class="image14"></div>
+                <div class="image15"></div>
+                <div class="image16"></div>
+              </div>
+        </section>
+        <section>
+            <div class="sub_heading">
+                <p>Customer Reviews</p>
+            </div>
+            <div class="grid-container">
+
+                <div class="grid-item">
+                    <div class="customer">
+                    <img src="https://i.pinimg.com/564x/db/d2/66/dbd2660dde12b3a2791371472e458b1d.jpg">
+                </div>
+                    Silken Whisper has truly redefined elegance for me. The sensual color palette they offer is a dream come true for any makeup enthusiast. The shades feel like they've been kissed by luxury, and the textures are incredibly smooth. My personal favorite is the "Lustrous Velvet" lipstick – it's like a whisper of sophistication on my lips.
+                </div>
+                <div class="grid-item">
+                    <div class="customer">
+                        <img src="https://i.pinimg.com/564x/a1/81/ae/a181ae5bade8652053100d50c92dba78.jpg">
+                    </div>
+                    Silken Whisper has truly redefined elegance for me. The sensual color palette they offer is a dream come true for any makeup enthusiast. The shades feel like they've been kissed by luxury, and the textures are incredibly smooth. My personal favorite is the "Lustrous Velvet" lipstick – it's like a whisper of sophistication on my lips.
+                </div>
+                <div class="grid-item">
+                    <div class="customer">
+                        <img src="https://i.pinimg.com/564x/f1/ed/60/f1ed606116ce34ea3f7861e01f25207f.jpg">
+                    </div>
+                    Silken Whisper has truly redefined elegance for me. The sensual color palette they offer is a dream come true for any makeup enthusiast. The shades feel like they've been kissed by luxury, and the textures are incredibly smooth. My personal favorite is the "Lustrous Velvet" lipstick – it's like a whisper of sophistication on my lips.
+                </div>
+
+            </div>
+        </section>
+    </content>
+    
+    <footer class="footer">
+        <div class="fo-grid-container">
+            <div class="fo-grid-items">
+                <div class="fo-intro">
+                    <h1>SILKERS</h1>
+                    At Silken Whispers, we believe in the power of understated beauty. Our carefully crafted cosmetics embody a fusion of aesthetics and sensuality, inviting you to embrace your unique grace with each stroke
+                    <div>
+                        <p class="footer-company-name">Company Name <b>&copy</b> 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-nav">
+                <ul>
+                    <li><a href="" class="item" >Home</a></li><br>
+                    <li><a href="category.html" class="item" >Category</a></li><br>
+                    <li><a href="aboutus.html" class="item" >About Us</a></li><br>
+                    <li><a href="" class="item" >Brands</a></li><br>
+                    <li><a href="" class="item" >Beauty Advice</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-image1">
+                    <img src="fo__1_-removebg-preview-removebg-preview.png">
+                </div>
+                <div class="fo-logo">
+                    <img src="fo-logo.png" alt="CosmicCuties" >
+                </div>
+                <div class="footer-image2">
+                    <img src="foimg-transformed-removebg-preview (3) (1).png">
+                </div>
+            </div>
+
+            <div class="fo-grid-items">
+                <div class="footer-social">
+                    <a href="#" ><img src="icons8-facebook-50.png" alt="Facebook" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-twitter-50.png" alt="Twitter" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-instagram-50.png" alt="Instagram" class="icons"></a><br>
+                    <a href="#" ><img src="icons8-linkedin-50.png" alt="LinkedIn" class="icons"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            
+            </div>
+            <div class="fo-grid-items">
+                <div class="footer-contact">
+                    <p>Contact Us:</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">email</i></a>
+                    <p>contact@example.com</p><br>
+                    <a href="LogIn.html"><i class="material-icons" id="btncontact">call</i></a>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="fo-last">
+            <div class="fo-last-img" id="left">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+            <div class="fo-last-text">
+                SILKEN WHISPERS CHIRANSHU 2110992197
+            </div>
+            <div class="fo-last-img" id="right">
+                <img src="fo-last-removebg-preview (2) (1) (1).png">
+            </div>
+        </div>
+    </footer>
+    <script>
+    //     document.addEventListener('DOMContentLoaded', function () {
+    //     const overlay = document.getElementById('overlay');
+    //     const cookiesPopup = document.getElementById('cookies-popup');
+    //     const acceptCookiesButton = document.getElementById('accept-cookies');
+
+    //     // Check if the user has already accepted cookies
+    //     if (!localStorage.getItem('cookiesAccepted')) {
+    //         // If not, display the cookies popup
+    //         overlay.style.display = 'block';
+    //         cookiesPopup.style.display = 'block';
+    //     }
+
+    //     // When the user clicks the "Accept" button, hide the popup and store their consent
+    //     acceptCookiesButton.addEventListener('click', function () {
+    //         overlay.style.display = 'none';
+    //         cookiesPopup.style.display = 'none';
+    //         localStorage.setItem('cookiesAccepted', 'true');
+    //     });
+    // });
+    document.addEventListener('DOMContentLoaded', function () {
+    const overlay = document.getElementById('overlay');
+    const cookiesPopup = document.getElementById('cookies-popup');
+    const acceptCookiesButton = document.getElementById('accept-cookies');
+
+    // Always display the cookies popup
+    overlay.style.display = 'block';
+    cookiesPopup.style.display = 'block';
+
+    // When the user clicks the "Accept" button, hide the popup (no local storage)
+    acceptCookiesButton.addEventListener('click', function () {
+        overlay.style.display = 'none';
+        cookiesPopup.style.display = 'none';
+    });
+});
+
+    const slider = document.querySelector('.gallery');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', e => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', _ => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', _ => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const SCROLL_SPEED = 3;
+    const walk = (x - startX) * SCROLL_SPEED;
+    slider.scrollLeft = scrollLeft - walk;
+    });
+
+    </script>
+</body>
+</html>
